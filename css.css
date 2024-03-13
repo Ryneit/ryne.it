@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*:active{
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    background: linear-gradient(180deg, hsla(42, 82%, 51%, 1) 0%, hsla(61, 96%, 68%, 1) 100%);
+}
+
+html,
+body{
+    touch-action: none;
+    -ms-touch-action: none;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+html,
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.wrapper{
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon{
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip{
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before{
+    background: #5562EA;
+    color: #fff        
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before{
+    background: #259BD8;
+    color: #fff
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before{
+    background: #E4405F;
+    color: #fff
+}
+
+.wrapper .tiktok:hover,
+.wrapper .tiktok:hover .tooltip,
+.wrapper .tiktok:hover .tooltip::before{
+    background: #333333;
+    color: #fff
+}
+
+.wrapper .ts:hover,
+.wrapper .ts:hover .tooltip,
+.wrapper .ts:hover .tooltip::before{
+    background: #445FA7;
+    color: #fff
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    max-width: 412px;
+    max-height: 412px;
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper{
+        zoom:150%;
+    }
+	
+}
+  
+@media screen and (max-width: 600px) {
+    .wrapper{
+        zoom:150%;
+    }
+
+    .image{
+        zoom: 150%;
+    }
+}
