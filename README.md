@@ -1,5 +1,5 @@
 <h1 align="center">The website of Ryneit</h1>
-<p align="center"><i>And is sponosor my server! (SunsetPvP</i></p>
+<p align="center"><i>And it sponsor my server! (SunsetPvP)</i></p>
 
 ### You want contact me?
 
